@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :inmana, Inmana.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: System.get_env("INMANA_DBUSER"),
+  password: System.get_env("INMANA_PASSWORD"),
   database: "inmana_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
