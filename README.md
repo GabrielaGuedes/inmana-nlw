@@ -5,6 +5,11 @@ This is an app to manage the supplies that each restaurant has. It sends an emai
 
 ## Development
 
+You need to have the following environment variables:
+
+- INMANA_DBUSER: the user for the postgres database
+- INMANA_PASSWORD: the password for the postgres database
+
 To start your Phoenix server:
 
 - Install dependencies with `mix deps.get`
